@@ -1,4 +1,4 @@
-# Curriculum Vitae of Phiip Schulz-Klingauf
+# Curriculum Vitae of Philip Schulz-Klingauf
 
 Features:
 * Sass/SCSS
