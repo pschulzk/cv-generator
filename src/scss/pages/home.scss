@@ -4,45 +4,99 @@ main {
   height: 100%;
   background-color: color(pearl);
   color: color(black);
+}
 
-  .sidebar {
-    height: 100%;
-    padding-left: ws(medium);
-    padding-right: ws(medium);
-    padding-top: ws(large);
-    background-color: color(black);
-    color: color(pearl);
+.sidebar {
+  height: 100%;
+  padding-left: ws(medium);
+  padding-right: ws(medium);
+  padding-top: ws(large);
+  padding-bottom: ws(large);
+  background-color: color(black);
+  color: color(pearl);
+}
+
+.sidebar-row {
+  & + & {
+    margin-top: ws(xx-large);
+  }
+}
+
+#portrait {
+  width: 120%;
+  height: auto;
+}
+
+.table-contact {
+  width: 100%;
+
+  caption {
+    margin-bottom: ws(xx-small);
+    padding-bottom: ws(xx-small);
+    border-bottom: 1px solid color(greydark);
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
-  .content {
-    position: relative;
-    z-index: 1;
-    padding-top: ws(large);
-    background-color: color(pearl);
-    color: color(black);
+  tr > td {
+    line-height: ws(smaller);
 
-    & > .row:not(:first-child) {
-      padding-top: ws(large);
+    &:last-child {
+      text-align: right;
     }
-
-    .view-gh {
-      display: inline-block;
-      transition: color 0.1s;
-    }
-
-    .pre-title {
-      font-size: 1em;
-    }
-
-    .title {
-      margin-top: ws(small);
-      margin-bottom: ws(small);
-      font-size: 2em;
-    }
-
-    .sub-title {
-      margin-bottom: ws(large);
-      font-size: 1.5em;
-    } 
   }
+}
+
+.table-skill {
+  width: 100%;
+
+  caption {
+    margin-bottom: ws(xx-small);
+    padding-bottom: ws(xx-small);
+    border-bottom: 1px solid color(greydark);
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  tr > td {
+    line-height: ws(smaller);
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding-top: ws(large);
+  background-color: color(pearl);
+  color: color(black);
+
+  & > .row:not(:first-child) {
+    padding-top: ws(large);
+  }
+
+  .view-gh {
+    display: inline-block;
+    transition: color 0.1s;
+  }
+
+  .pre-title {
+    font-size: 1em;
+  }
+
+  .title {
+    margin-top: ws(small);
+    margin-bottom: ws(small);
+    font-size: 2em;
+  }
+
+  .sub-title {
+    margin-bottom: ws(large);
+    font-size: 1.5em;
+  } 
 }
