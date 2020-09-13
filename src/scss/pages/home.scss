@@ -37,6 +37,7 @@ main {
     text-align: left;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.15rem;
   }
 
   tr > td {
@@ -58,6 +59,7 @@ main {
     text-align: left;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.15rem;
   }
 
   tr > td {
@@ -86,17 +88,12 @@ main {
   }
 
   .pre-title {
-    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font: font(small);
   }
 
-  .title {
-    margin-top: ws(small);
-    margin-bottom: ws(small);
-    font-size: 2em;
+  .row.section-container {
+    padding-top: 0;
   }
-
-  .sub-title {
-    margin-bottom: ws(large);
-    font-size: 1.5em;
-  } 
 }

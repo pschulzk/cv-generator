@@ -38,39 +38,42 @@ a {
 h1,
 h2,
 h3 {
-  font-weight: 500 !important;
+  margin-top: ws(x-small);
+  margin-bottom: ws(x-small);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
 }
 
 h1 {
-  font: font(large);
-}
-
-h2 {
-  font: font(large);
-}
-
-h3 {
   font: font(x-medium);
 }
 
-// For tablets
-@media (min-width: 750px) {
-  h1 {
-    font: font(x-large);
-  }
+h2 {
+  font: font(medium);
 }
 
-// For larger screens
-@media (min-width: 1000px) {
-  h1 {
-    font: font(xx-large);
-  }
-
-  h2 {
-    font: font(x-large);
-  }
-
-  h3 {
-    font: font(large);
-  }
+h3 {
+  font: font(small);
 }
+
+// // For tablets
+// @media (min-width: 750px) {
+//   h1 {
+//     font: font(x-large);
+//   }
+// }
+
+// // For larger screens
+// @media (min-width: 1000px) {
+//   h1 {
+//     font: font(xx-large);
+//   }
+
+//   h2 {
+//     font: font(x-large);
+//   }
+
+//   h3 {
+//     font: font(large);
+//   }
+// }
