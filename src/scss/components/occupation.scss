@@ -1,0 +1,26 @@
+.occupation {
+    position: relative;
+    min-height: 8rem;
+}
+
+.occupation-date-span {
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -6rem;
+    bottom: 0;
+}
+
+.occupation-date {
+    min-width: 6rem;
+    white-space: nowrap;
+}
+
+.occupation-date-end {
+
+}
+
+.occupation-date-start {
+
+}
+
