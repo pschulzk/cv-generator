@@ -1,26 +1,48 @@
+@mixin line_dotted {
+    background-image: linear-gradient(to right, color(bluedark) 15%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+}
+
 .occupation {
     position: relative;
-    min-height: 8rem;
+    min-height: 10rem;
 }
 
 .occupation-date-span {
     display: flex;
     position: absolute;
     transform: rotate(-90deg);
-    left: -6rem;
-    bottom: 0;
+    transform-origin: right bottom;
+    // left: 0;
+    right: 48rem;
+    align-items: self-start;
+    justify-content: flex-end;
 }
 
 .occupation-date {
-    min-width: 6rem;
+    position: relative;
+    min-width: 2rem;
     white-space: nowrap;
+    font-size: 12px;
 }
 
 .occupation-date-end {
-
+    text-align: right;
+    margin-right: 0.25rem;
 }
 
 .occupation-date-start {
-
+    text-align: right;
+    margin-left: 0.25rem;
 }
 
+.occupation-until {
+    min-width: 2rem;
+    height: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    @include line_dotted;
+}
