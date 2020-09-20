@@ -14,6 +14,7 @@ const ghPages     = require('gulp-gh-pages');
 const sassGlob    = require('gulp-sass-bulk-import');
 const watch       = require('gulp-watch');
 const babel       = require('gulp-babel');
+const data        = require('./src/data.json');
 
 var paths = {
   src: { root: 'src' },
@@ -69,8 +70,10 @@ gulp.task('templates', () => {
     batch: ['src/partials'],
   };
 
+  console.log(`Template data:`, data);
+
   gulp.src([paths.src.root + '/*.hbs'])
-    .pipe(handlebars(null, opts))
+    .pipe(handlebars(data, opts))
     .on('error', util.log)
     .pipe(rename({
       extname: '.html',

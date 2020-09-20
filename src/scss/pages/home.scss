@@ -21,13 +21,14 @@ main {
 
 .sidebar-row {
   & + & {
-    margin-top: ws(xx-large);
+    margin-bottom: ws(x-large);
   }
 }
 
 #portrait {
   width: 120%;
   height: auto;
+  margin-bottom: ws(medium);
 }
 
 .table-standard {
@@ -64,11 +65,11 @@ main {
 
 .content {
   float: left;
-  width: 60%;
+  width: 62%;
   position: relative;
   z-index: 1;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
   padding-top: ws(large);
   background-color: color(pearl);
   color: color(black);

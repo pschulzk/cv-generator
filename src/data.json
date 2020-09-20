@@ -1,0 +1,59 @@
+{
+    "jobs": [
+        {
+          "jobTitle": "UX/Design Lead, Frontend Developer",
+          "employerName": "APA-IT Informations Technologie GmbH",
+          "employerUrl": "https://www.apa-it.at/",
+          "start": "Aug 2020",
+          "end": "Today",
+          "description": [
+            "aaa",
+            "bbb"
+          ]
+        },
+        {
+          "jobTitle": "UI/UX Developer",
+          "employerName": "APA-IT Informations Technologie GmbH",
+          "employerUrl": "https://www.apa-it.at/",
+          "start": "Nov 2019",
+          "end": "Aug 2020",
+          "description": [
+            "aaa",
+            "bbb"
+          ]
+        },
+        {
+          "jobTitle": "Frontend Developer",
+          "employerName": "XFIS IT-Lösungen GmbH",
+          "employerUrl": "https://www.xfis.at/",
+          "start": "Nov 2019",
+          "end": "Jan 2017",
+          "description": [
+            "aaa",
+            "bbb"
+          ]
+        },
+        {
+          "jobTitle": "Web Developer",
+          "employerName": "DigitalWerk GmbH",
+          "employerUrl": "https://digitalwerk.agency/",
+          "start": "Sept 2016",
+          "end": "Apr 2015",
+          "description": [
+            "aaa",
+            "bbb"
+          ]
+        },
+        {
+          "jobTitle": "Freelance Webdesigner",
+          "employerName": "self-employed",
+          "employerUrl": "",
+          "start": "Feb 2013",
+          "end": "Apr 2015",
+          "description": [
+            "aaa",
+            "bbb"
+          ]
+        }
+      ]
+}

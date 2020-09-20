@@ -1,5 +1,4 @@
 <div class="row occupation">
-
   <div class="wrapper">
     <div class="occupation-date-span">
       <div class="occupation-date occupation-date-start">
@@ -17,7 +16,11 @@
 
   <div class="wrapper eleven columns">
     <h2 class="occupation-employer"><a href="{{employerUrl}}">{{employerName}}</a></h2>
-    <span class="occupation-title">{{jobtitle}}</span>
-    <div class="occupation-description">{{description}}</div>
+    <span class="occupation-title">{{jobTitle}}</span>
+    <ul class="occupation-description">
+      {{#each description}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
   </div>
 </div>
