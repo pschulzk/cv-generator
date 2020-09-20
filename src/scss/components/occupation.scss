@@ -7,7 +7,12 @@
 
 .occupation {
     position: relative;
-    min-height: 10rem;
+    min-height: 12rem;
+    padding-top: ws(x-small);
+
+    & + & {
+        border-top: 1px solid color(light);
+    }
 }
 
 .occupation-date-span {
@@ -15,27 +20,27 @@
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: right bottom;
-    // left: 0;
-    right: 48rem;
     align-items: self-start;
     justify-content: flex-end;
+    right: 44rem;
+    margin-top: -0.2rem;
 }
 
 .occupation-date {
     position: relative;
     min-width: 2rem;
     white-space: nowrap;
-    font-size: 12px;
+    font: font(tiny);
 }
 
 .occupation-date-end {
     text-align: right;
-    margin-right: 0.25rem;
+    margin-left: 0.25rem;
 }
 
 .occupation-date-start {
     text-align: right;
-    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .occupation-until {
@@ -45,4 +50,15 @@
     bottom: 0;
     margin: auto;
     @include line_dotted;
+}
+
+.occupation-title {
+    font: font(tiny);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.occupation-description {
+    margin-top: ws(x-small);
+
 }

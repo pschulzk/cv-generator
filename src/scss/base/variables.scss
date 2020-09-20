@@ -26,13 +26,14 @@ $whitespace: (
 );
 
 $font-size: (
-  default: '16px/1.35',
+  default: '14px',
   xxx-large: '18rem/0.9',
   xx-large: '8rem/1.05',
   x-large: '5rem/1.0',
   large: '3rem/1.2',
   x-medium: '2.2rem/1.2',
-  medium: '1.4rem/1.8',
-  small: '1rem/1.6',
-  tiny: '0.8rem/1.0'
+  medium: '24px',
+  small: '20px',
+  x-tiny: '18px',
+  tiny: '14px'
 );

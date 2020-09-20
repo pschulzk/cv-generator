@@ -40,20 +40,23 @@ h2,
 h3 {
   margin-top: ws(x-small);
   margin-bottom: ws(x-small);
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
 }
 
 h1 {
-  font: font(x-medium);
+  font: font(medium);
+  letter-spacing: 1px;
 }
 
 h2 {
-  font: font(medium);
+  font: font(small);
+  // text-transform: uppercase;
+  // letter-spacing: 2px;
 }
 
 h3 {
-  font: font(small);
+  font: font(x-tiny);
+  // text-transform: uppercase;
+  // letter-spacing: 2px;
 }
 
 // // For tablets

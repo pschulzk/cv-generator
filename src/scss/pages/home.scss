@@ -7,9 +7,12 @@ main {
 }
 
 .sidebar {
-  height: 100%;
-  padding-left: ws(medium);
-  padding-right: ws(medium);
+  z-index: 2;
+  float: left;
+  position: relative;
+  width: 26%;
+  padding-left: 2%;
+  padding-right: 2%;
   padding-top: ws(large);
   padding-bottom: ws(large);
   background-color: color(bluedark);
@@ -60,28 +63,42 @@ main {
 }
 
 .content {
+  float: left;
+  width: 60%;
   position: relative;
   z-index: 1;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: ws(large);
   background-color: color(pearl);
   color: color(black);
 
-  & > .row:not(:first-child) {
-    padding-top: ws(large);
-  }
+  // & > .row:not(:first-child) {
+  //   padding-top: ws(large);
+  // }
 
   .view-gh {
     display: inline-block;
     transition: color 0.1s;
   }
 
-  .pre-title {
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font: font(small);
-  }
-
   .row.section-container {
     padding-top: 0;
   }
+}
+
+.cv-header {
+  margin-bottom: ws(large);
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font: font(tiny);
+}
+
+.sub-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font: font(x-tiny);
 }
