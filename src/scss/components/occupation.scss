@@ -60,5 +60,10 @@
 
 .occupation-description {
     margin-top: ws(x-small);
+    list-style-type: square;
+    text-indent: 0.85rem;
 
+    li + li {
+        margin-top: ws(x-small);
+    }
 }
