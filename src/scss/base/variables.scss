@@ -7,7 +7,7 @@ $colors: (
   grey: #A0999E,
   greydark: #454545,
   black: #302D2F,
-  blue: #00FF9F,
+  blue: #125386,
   bluedark: #052B44
 );
 
@@ -35,5 +35,10 @@ $font-size: (
   medium: '1.2rem', // 24px
   small: '1rem', // 20px
   x-tiny: '0.8rem', // 18px
-  tiny: '0.6rem' // 14px
+  tiny: '0.6rem', // 14px
+
+  medium-print: '0.6rem', // 24px
+  small-print: '0.5rem', // 20px
+  x-tiny-print: '0.4rem', // 18px
+  tiny-print: '0.3rem' // 14px
 );

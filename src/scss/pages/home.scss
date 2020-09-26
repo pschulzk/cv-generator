@@ -103,3 +103,13 @@ main {
   letter-spacing: 0.1rem;
   font: font(x-tiny);
 }
+
+@media print {
+  .pre-title {
+    font: font(tiny-print);
+  }
+  
+  .sub-title {
+    font: font(x-tiny-print);
+  }
+}

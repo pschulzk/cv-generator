@@ -1,7 +1,7 @@
 @mixin line_dotted {
-    background-image: linear-gradient(to right, color(bluedark) 15%, rgba(255,255,255,0) 0%);
+    background-image: linear-gradient(to right, color(blue) 30%, rgba(255,255,255,0) 0%);
     background-position: bottom;
-    background-size: 4px 1px;
+    background-size: 8px 2px;
     background-repeat: repeat-x;
 }
 
@@ -45,7 +45,7 @@
 
 .occupation-until {
     min-width: 2rem;
-    height: 1px;
+    height: 2px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -59,11 +59,18 @@
 }
 
 .occupation-description {
+    list-style: none;
+    // margin-left: 0.8rem;
     margin-top: ws(x-small);
-    list-style-type: square;
-    text-indent: 0.85rem;
+    // list-style-type: square;
+    // text-indent: 0.85rem;
 
     li + li {
         margin-top: ws(x-small);
+    }
+    li:before {
+        content: '■';
+        margin-right: 0.5rem;
+        color: color(blue);
     }
 }

@@ -49,14 +49,32 @@ h1 {
 
 h2 {
   font: font(small);
-  // text-transform: uppercase;
-  // letter-spacing: 2px;
 }
 
 h3 {
   font: font(x-tiny);
-  // text-transform: uppercase;
-  // letter-spacing: 2px;
+}
+
+@media print {
+  h1,
+  h2,
+  h3 {
+    margin-top: ws(x-small-print);
+    margin-bottom: ws(x-small-print);
+  }
+  
+  h1 {
+    font: font(medium-print);
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    font: font(small-print);
+  }
+  
+  h3 {
+    font: font(x-tiny-print);
+  }
 }
 
 // // For tablets
