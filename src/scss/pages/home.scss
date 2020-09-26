@@ -57,7 +57,7 @@ main {
   tr > td {
     line-height: ws(smaller);
 
-    &:last-child {
+    &:nth-child(2) {
       text-align: right;
     }
   }
