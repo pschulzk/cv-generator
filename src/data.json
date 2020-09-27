@@ -7,41 +7,58 @@
           "start": "Aug 2020",
           "end": "Today",
           "description": [
-            "aaa",
-            "bbb"
+            "Responsible for quality assurance of department's frontends usability and appearance",
+            "Innovation management for company product frontends",
+            "UI/UX consulting (internal and external)",
+            "Improving development workflows",
+            "Development tasks (see below)"
           ]
         },
         {
-          "jobTitle": "UI/UX Developer",
+          "jobTitle": "Frontend Developer",
           "employerName": "APA-IT Informations Technologie GmbH",
           "employerUrl": "https://www.apa-it.at/",
-          "start": "Nov 2019",
+          "start": "Nov 2018",
           "end": "Aug 2020",
           "description": [
-            "aaa",
-            "bbb"
+            "Writing specifications based on user stories by project managers and customer agents",
+            "Designing architectural solutions",
+            "Designing (UI/UX) and implementing Angular frontend applications",
+            "Conducting user interviews; evaluating and improving application usability",
+            "Designing architecture of a new and complex (20+ modules) Angular product application",
+            "Orchestrating and maintaning migration from distributed repositories (GitLab) to one mono-repository (Nrwl/NX)",
+            "Implementing unit tests (Jasmine) and end-to-end tests (Protractor) for Angular applications",
+            "Co-designing data models and REST APIs with backend team",
+            "Creating and maintaining internal (company) NPM repositories",
+            "Performing application maintenance, 2nd level support",
+            "Mentoring junior developers"
           ]
         },
         {
           "jobTitle": "Frontend Developer",
           "employerName": "XFIS IT-Lösungen GmbH",
           "employerUrl": "https://www.xfis.at/",
-          "start": "Nov 2019",
-          "end": "Jan 2017",
+          "start": "Jan 2017",
+          "end": "Nov 2018",
           "description": [
-            "aaa",
-            "bbb"
+            "Specified, designed (UI/UX) and implemented Angular frontend applications for a suite of software products dedicated to public grant management in several iterations involving executive board",
+            "Co-designed REST APIs with backend team suitable for content repository Alfresco",
+            "Designed and implemented an Angular UI component library from scratch"
           ]
         },
         {
           "jobTitle": "Web Developer",
           "employerName": "DigitalWerk GmbH",
           "employerUrl": "https://digitalwerk.agency/",
-          "start": "Sept 2016",
-          "end": "Apr 2015",
+          "start": "Apr 2015",
+          "end": "Sept 2016",
           "description": [
-            "aaa",
-            "bbb"
+            "Implemented websites based on CMS WordPress (HTML, CSS, PHP, jQuery)",
+            "Implemented Google Ads (HTML, CSS, JavaScript) according to IAB standards",
+            "Implemented responsive and dynamic email templates for marketing campaigns (Campaign Monitor, Mailchimp)",
+            "Designed (UI/UX) concepts for responsive websites",
+            "Hosted workshops instructing customer agents",
+            "Contributed to Online Marketing strategies"
           ]
         },
         {
@@ -51,8 +68,8 @@
           "start": "Feb 2013",
           "end": "Apr 2015",
           "description": [
-            "aaa",
-            "bbb"
+            "Implemented websites based on CMS WordPress (HTML, CSS, PHP, jQuery)",
+            "Designed (UI/UX) concepts for responsive websites"
           ]
         }
       ]
