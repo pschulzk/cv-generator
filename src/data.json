@@ -21,14 +21,13 @@
           "start": "Nov 2018",
           "end": "Aug 2020",
           "description": [
-            "Writing specifications based on user stories by project managers and customer agents",
-            "Designing architectural solutions",
             "Designing (UI/UX) and implementing Angular frontend applications",
-            "Conducting user interviews; evaluating and improving application usability",
-            "Designing architecture of a new and complex (20+ modules) Angular product application",
-            "Orchestrating and maintaning migration from distributed repositories (GitLab) to one mono-repository (Nrwl/NX)",
             "Implementing unit tests (Jasmine) and end-to-end tests (Protractor) for Angular applications",
             "Co-designing data models and REST APIs with backend team",
+            "Designing architectural solutions",
+            "Writing specifications based on user stories by project managers and customer agents",
+            "Conducting user interviews; evaluating and improving application usability",
+            "Orchestrating and maintaning migration from distributed repositories (GitLab) to one mono-repository (Nrwl/NX)",
             "Creating and maintaining internal (company) NPM repositories",
             "Performing application maintenance, 2nd level support",
             "Mentoring junior developers"
