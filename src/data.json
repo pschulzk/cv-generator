@@ -41,8 +41,8 @@
           "start": "Jan 2017",
           "end": "Nov 2018",
           "description": [
-            "Specified, designed (UI/UX) and implemented Angular frontend applications for a suite of software products dedicated to public grant management in several iterations involving executive board",
-            "Co-designed REST APIs with backend team suitable for content repository Alfresco",
+            "Specified, designed (UI/UX) and implemented Angular frontend applications for a suite of software products dedicated to public grant management",
+            "Co-designed REST APIs with backend team compatible with content repository Alfresco",
             "Designed and implemented an Angular UI component library from scratch"
           ]
         },
@@ -69,7 +69,7 @@
           "end": "Apr 2015",
           "description": [
             "Implemented websites based on CMS WordPress (HTML, CSS, PHP, jQuery)",
-            "Designed (UI/UX) concepts for responsive websites"
+            "Designed (UI/UX) responsive websites"
           ]
         }
       ]
