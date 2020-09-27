@@ -62,13 +62,15 @@
 .occupation-description {
     list-style: none;
     margin-top: ws(x-small);
+    padding-left: 1rem;
+    text-indent: -1rem;
 
     li + li {
         margin-top: ws(x-small);
     }
     li:before {
         content: '■';
-        margin-right: 0.5rem;
-        color: color(blue);
+        margin-right: 0.6rem;
+        color: color(bluedark);
     }
 }
