@@ -1,69 +1,67 @@
-@mixin line_dotted {
-    background-image: linear-gradient(to right, color(blue) 30%, rgba(255,255,255,0) 0%);
-    background-position: bottom;
-    background-size: 8px 2px;
-    background-repeat: repeat-x;
-}
-
 .occupation {
     position: relative;
-    min-height: 12rem;
+    margin-top: ws(x-small);
     padding-top: ws(x-small);
 
     & + & {
+        margin-top: ws(small);
         border-top: 1px solid color(light);
+    }
+
+    h2 {
+        margin-top: 0;
     }
 }
 
 .occupation-date-span {
-    display: flex;
     position: absolute;
-    transform: rotate(-90deg);
-    transform-origin: right bottom;
-    align-items: self-start;
-    justify-content: flex-end;
-    right: 98%;
-    margin-top: 0.15rem;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    
 }
 
 .occupation-date {
-    position: relative;
-    min-width: 2rem;
-    white-space: nowrap;
-    font: font(tiny);
+    padding-bottom: 0.5rem;
+    min-height: 2.6rem;
+
+    .inner {
+        transform: rotate(-90deg) translateY(-3rem);
+        transform-origin: right top;
+        min-width: 3rem;
+        white-space: nowrap;
+        font: font(tiny);
+    }
 }
 
 .occupation-date-end {
     text-align: right;
-    margin-left: 0.25rem;
+    padding-right: 0.2rem;
 }
 
 .occupation-date-start {
-    text-align: right;
-    margin-right: 0.4rem;
+    text-align: left;
+    padding-bottom: 2.5rem;
 }
 
 .occupation-until {
-    min-width: 2rem;
-    height: 2px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    @include line_dotted;
+    flex: 1;
+    overflow: auto;
+    opacity: 0.25;
+    width: 1px;
+    margin-left: 0.38rem;
+    background-color: color(blue);
 }
 
 .occupation-title {
-    font: font(tiny);
+    font: font(x-tiny);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .occupation-description {
     list-style: none;
-    // margin-left: 0.8rem;
     margin-top: ws(x-small);
-    // list-style-type: square;
-    // text-indent: 0.85rem;
 
     li + li {
         margin-top: ws(x-small);
