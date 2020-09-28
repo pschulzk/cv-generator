@@ -34,11 +34,12 @@ $font-size: (
   x-medium: '2.2rem/1.2',
   medium: '1.2rem', // 24px
   small: '1rem', // 20px
-  x-tiny: '0.7rem', // 18px
-  tiny: '0.6rem', // 14px
+  x-tiny: '0.85rem', // 18px
+  tiny: '0.65rem', // 14px
 
-  medium-print: '0.6rem', // 24px
-  small-print: '0.5rem', // 20px
-  x-tiny-print: '0.35rem', // 18px
-  tiny-print: '0.3rem' // 14px
+  default-print: '8px',
+  medium-print: '0.9rem', // 24px
+  small-print: '0.8rem', // 20px
+  x-tiny-print: '0.6rem', // 18px
+  tiny-print: '0.4rem' // 14px
 );

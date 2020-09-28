@@ -10,7 +10,8 @@ main {
   z-index: 2;
   float: left;
   position: relative;
-  width: 26%;
+  width: 16%;
+  // height: 180rem;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: ws(large);
@@ -63,20 +64,23 @@ main {
   }
 }
 
+h2 {
+  margin-bottom: ws(medium);
+  padding-bottom: ws(x-small);
+  border-bottom: 1px solid color(light);
+}
+
 .content {
   float: left;
-  width: 62%;
+  width: 50%;
   position: relative;
   z-index: 1;
   padding-left: 4%;
-  padding-right: 4%;
-  padding-top: ws(large);
+  padding-right: 2%;
+  // padding-top: ws(large);
+  padding-top: 2.8rem;
   background-color: color(pearl);
   color: color(black);
-
-  // & > .row:not(:first-child) {
-  //   padding-top: ws(large);
-  // }
 
   .view-gh {
     display: inline-block;
@@ -89,7 +93,7 @@ main {
 }
 
 .cv-header {
-  margin-bottom: ws(large);
+  margin-bottom: ws(medium);
 }
 
 .pre-title {
@@ -102,6 +106,46 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font: font(x-tiny);
+}
+
+.skills {
+  float: left;
+  width: 20%;
+  position: relative;
+  z-index: 1;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 8.5rem;
+  // padding-top: ws(large);
+  background-color: color(pearl);
+  color: color(black);
+
+  // h2 {
+  //   margin-bottom: ws(medium);
+  //   padding-bottom: ws(x-small);
+  //   border-bottom: 1px solid color(light);
+  // }
+
+  .row + .row {
+    padding-bottom: ws(medium);
+  }
+}
+
+.anchor-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  path {
+    transition: fill 0.2s ease-in-out;
+    fill: color(pearl);
+  }
+
+  &:hover {
+    path {
+      fill: color(blue);
+    }
+  }
 }
 
 @media print {

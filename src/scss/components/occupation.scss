@@ -1,14 +1,17 @@
 .occupation {
     position: relative;
-    margin-top: ws(x-small);
-    padding-top: ws(x-small);
 
     & + & {
         margin-top: ws(small);
+        padding-top: ws(x-small);
         border-top: 1px solid color(light);
+
+        .occupation-date {
+            padding-bottom: 0.75rem;
+        }
     }
 
-    h2 {
+    h1, h2, h3 {
         margin-top: 0;
     }
 }
@@ -22,7 +25,6 @@
 }
 
 .occupation-date {
-    padding-bottom: 0.5rem;
     min-height: 2.6rem;
 
     .inner {
@@ -54,7 +56,7 @@
 }
 
 .occupation-title {
-    font: font(x-tiny);
+    font: font(tiny);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -74,3 +76,15 @@
         color: color(bluedark);
     }
 }
+
+@media print {
+    .occupation-title {
+        font: font(tiny-print);
+    }
+
+    .occupation-date { 
+        .inner {
+            font: font(tiny-print);
+        }
+    }
+  }
