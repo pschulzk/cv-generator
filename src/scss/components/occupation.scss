@@ -1,87 +1,117 @@
 .occupation {
-    position: relative;
-    padding-top: ws(x-small);
+  position: relative;
+  padding-top: ws(x-small);
+  
+  :not(&) + & {
 
-    & + & {
-        margin-top: ws(small);
-        border-top: 1px solid color(light);
+    .occupation-date-end {
+      padding-bottom: 0.6rem;
     }
-
-    h2 {
-        margin-top: 0;
-    }
+  }
+  
+  & + & {
+    margin-top: ws(small);
+    border-top: 1px solid color(light);
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .occupation-date-span {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 1.8rem;
 }
 
 .occupation-date {
-    padding-bottom: 0.5rem;
-    min-height: 2.6rem;
-
-    .occupation-date-inner {
-        display: inline-block;
-        transform: rotate(-90deg) translateY(-3rem);
-        transform-origin: right top;
-        min-width: 3rem;
-        white-space: nowrap;
-        font: font(tiny);
-    }
+  padding-bottom: 0.5rem;
+  
+  .occupation-date-inner {
+    display: inline-block;
+    transform: rotate(-90deg) translateY(-3rem);
+    transform-origin: right top;
+    min-width: 3rem;
+    white-space: nowrap;
+    font: font(tiny);
+  }
 }
 
 .occupation-date-end {
-    text-align: right;
-    // padding-right: 0.2rem;
+  padding-bottom: 1.5rem;
+  text-align: right;
 }
 
 .occupation-date-start {
-    text-align: left;
-    padding-bottom: 2.5rem;
+  text-align: right;
+  padding-bottom: 2.9rem;
 }
 
 .occupation-until {
-    flex: 1;
-    overflow: auto;
-    opacity: 0.3;
-    width: 1px;
-    margin-left: 0.38rem;
-    background-color: color(blue);
+  flex: 1;
+  overflow: auto;
+  opacity: 0.3;
+  width: 1px;
+  margin-left: 0.38rem;
+  margin-bottom: 0.2rem;
+  background-color: color(blue);
 }
 
 .occupation-title {
-    // font: font(x-tiny);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .occupation-description {
-    list-style: none;
+  list-style: none;
+  margin-top: ws(x-small);
+  padding-left: 1rem;
+  text-indent: -1rem;
+  
+  li + li {
     margin-top: ws(x-small);
-    padding-left: 1rem;
-    text-indent: -1rem;
-
-    li + li {
-        margin-top: ws(x-small);
-    }
-    li:before {
-        content: '■';
-        margin-right: 0.6rem;
-        color: color(bluedark);
-    }
+  }
+  li:before {
+    content: '■';
+    margin-right: 0.6rem;
+    color: color(bluedark);
+  }
 }
 
 @media print {
 
-  .occupation-date {
-
-    .occupation-date-inner {
-        font: font(tiny-print);
-    }
+  .occupation {
+    padding-top: ws(x-small-print);
   }
 
+  .occupation-date-span {
+    padding-top: 0.45rem;
+    // padding-bottom: 2rem;
+  }
+  
+  .occupation-date {
+    padding-bottom: 0;
+    
+    .occupation-date-inner {
+      font: font(tiny-print);
+    }
+  }
+  
+  // .occupation-date-end {
+    // padding-bottom: 2rem;
+  // }
+  
+  .occupation-date-start {
+    padding-bottom: 2.1rem;
+  }
+  
+  .occupation-until {
+    margin-left: 0.25rem;
+    // margin-bottom: 0;
+  }
+  
 }

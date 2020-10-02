@@ -22,14 +22,14 @@ main {
 #portrait {
   width: 100%;
   height: auto;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-bottom: ws(medium);
 }
 
 .table-standard {
-  width: calc(100% - 4rem);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: ws(x-small);
 
   &.lines {
@@ -46,13 +46,13 @@ main {
     padding-bottom: ws(xx-small);
     border-bottom: 1px solid color(grey);
     text-align: left;
-    font-weight: bold;
+    // font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
   }
 
   tr > td {
-    line-height: ws(small);
+    line-height: ws(smaller);
 
     &:nth-child(2) {
       text-align: right;
@@ -61,15 +61,19 @@ main {
 }
 
 .social {
-  width: calc(100% - 4rem);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  .wrapper {
+    margin-right: 1rem;
+  }
 }
 
 .anchor-icon {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
 
   path {
     transition: fill 0.2s ease-in-out;
@@ -140,6 +144,10 @@ main {
 }
 
 @media print {
+  #portrait {
+    width: 100%;
+  }
+
   .pre-title {
     font: font(tiny-print);
   }

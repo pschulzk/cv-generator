@@ -19,10 +19,18 @@ $whitespace: (
   large: 3rem,
   x-medium: 2.25rem,
   medium: 2rem,
-  smaller: 1.7rem,
+  smaller: 1.2rem,
   small: 1.2rem,
   x-small: 0.7rem,
-  xx-small: 0.25rem
+  xx-small: 0.25rem,
+
+  large-print: 3rem / 2,
+  x-medium-print: 2.25rem / 2,
+  medium-print: 2rem / 2,
+  smaller-print: 1.7rem / 2,
+  small-print: 1.2rem / 2,
+  x-small-print: 0.7rem / 2,
+  xx-small-print: 0.25rem / 2
 );
 
 $font-size: (
@@ -32,14 +40,14 @@ $font-size: (
   x-large: '5rem/1.0',
   large: '3rem/1.2',
   x-medium: '2.2rem/1.2',
-  medium: '1.2rem', // 24px
-  small: '1rem', // 20px
-  x-tiny: '0.7rem', // 18px
-  tiny: '0.6rem', // 14px
+  medium: '1.2rem',
+  small: '1rem',
+  x-tiny: '0.85rem',
+  tiny: '0.6rem',
 
   default-print: '8px',
-  medium-print: '0.6rem', // 24px
-  small-print: '0.55rem', // 20px
-  x-tiny-print: '0.35rem', // 18px
-  tiny-print: '0.3rem' // 14px
+  medium-print: '0.6rem',
+  small-print: '0.55rem',
+  x-tiny-print: '0.45rem',
+  tiny-print: '0.4rem'
 );

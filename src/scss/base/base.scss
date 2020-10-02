@@ -52,6 +52,10 @@ h2 {
 }
 
 h3 {
+  font: font(x-tiny);
+}
+
+h4 {
   font: font(tiny);
 }
 
@@ -79,6 +83,10 @@ h3 {
   
   h3 {
     font: font(x-tiny-print);
+  }
+
+  h4 {
+    font: font(tiny-print);
   }
 }
 
