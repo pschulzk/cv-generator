@@ -16,7 +16,7 @@ main {
 
 .sidebar-row {
   & + & {
-    margin-bottom: ws(x-large);
+    margin-bottom: ws(medium);
   }
 }
 
@@ -33,15 +33,11 @@ main {
   margin-right: 2rem;
   margin-top: ws(x-small);
 
-  & + & {
-    margin-top: ws(large);
-  }
-
   &.lines {
     width: calc(100% - 2rem);
     margin-left: 0;
 
-    tr > td {
+    tr {
       border-bottom: 1px solid color(light);
     }
   }
@@ -49,7 +45,7 @@ main {
   caption {
     margin-bottom: ws(xx-small);
     padding-bottom: ws(xx-small);
-    border-bottom: 1px solid color(greydark);
+    border-bottom: 1px solid color(grey);
     text-align: left;
     font-weight: bold;
     text-transform: uppercase;
@@ -57,7 +53,7 @@ main {
   }
 
   tr > td {
-    line-height: ws(smaller);
+    line-height: ws(small);
 
     &:nth-child(2) {
       text-align: right;
@@ -77,9 +73,13 @@ main {
     display: inline-block;
     transition: color 0.1s;
   }
+}
 
-  .row.section-container {
-    padding-top: 0;
+.section-container {
+  // padding-top: 0;
+
+  table {
+    margin-bottom: ws(medium);
   }
 }
 
