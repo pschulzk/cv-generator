@@ -1,18 +1,13 @@
 
 main {
-  // width: 100%;
   height: 100%;
   background-color: color(pearl);
-  color: color(black);
 }
 
 .sidebar {
   z-index: 2;
-//   float: left;
   position: relative;
-  // width: 26%;
-  // padding-left: 2%;
-  // padding-right: 2%;
+  height: 100%;
   padding-top: ws(large);
   padding-bottom: ws(large);
   background-color: color(bluedark);
@@ -26,8 +21,9 @@ main {
 }
 
 #portrait {
-  width: 120%;
+  width: 100%;
   height: auto;
+  margin-left: 2rem;
   margin-bottom: ws(medium);
 }
 
@@ -35,6 +31,7 @@ main {
   width: calc(100% - 4rem);
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-top: ws(x-small);
 
   & + & {
     margin-top: ws(large);
@@ -69,20 +66,12 @@ main {
 }
 
 .content {
-//   float: left;
-  // flex-direction: column;
-  // width: 70%;
   position: relative;
   z-index: 1;
-  // padding-left: 4%;
-  // padding-right: 4%;
   padding-top: ws(large);
   background-color: color(pearl);
   color: color(black);
 
-  // & > .row:not(:first-child) {
-  //   padding-top: ws(large);
-  // }
 
   .view-gh {
     display: inline-block;
@@ -95,11 +84,8 @@ main {
 }
 
 .cv-header {
-  // width: calc(100% - 6rem);
   position: relative;
-  // padding-left: 3rem;
-  // padding-right: 3rem;
-  margin-bottom: ws(large);
+  margin-bottom: ws(medium);
 }
 
 .pre-title {
@@ -114,22 +100,20 @@ main {
   font: font(x-tiny);
 }
 
+.section-header {
+  border-bottom: 1px solid color(light);
+}
+
 .content-inner {
   flex-direction: row;
 }
 
 .content-experience {
-    // width: calc(70% - 6rem);
     position: relative;
-    // padding-left: 3rem;
-    // padding-right: 3rem;
 }
 
 .content-skills {
-    // width: calc(30% - 6rem);
     position: relative;
-    // padding-left: 3rem;
-    // padding-right: 3rem;
 }
 
 @media print {
