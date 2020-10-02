@@ -52,10 +52,15 @@ h2 {
 }
 
 h3 {
-  font: font(x-tiny);
+  font: font(tiny);
 }
 
 @media print {
+
+  body {
+      font: font(default-print);
+  }
+
   h1,
   h2,
   h3 {

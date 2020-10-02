@@ -7,7 +7,6 @@ main {
 .sidebar {
   z-index: 2;
   position: relative;
-  height: 100%;
   padding-top: ws(large);
   padding-bottom: ws(large);
   background-color: color(bluedark);
@@ -88,6 +87,7 @@ main {
   position: relative;
   z-index: 1;
   padding-top: ws(large);
+  padding-bottom: ws(large);
   background-color: color(pearl);
   color: color(black);
 

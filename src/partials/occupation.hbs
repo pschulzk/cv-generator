@@ -2,7 +2,7 @@
   <div class="wrapper one column">
     <div class="occupation-date-span">
       <div class="occupation-date">
-        <div class="inner occupation-date-end">
+        <div class="inner occupation-date-inner occupation-date-end">
             {{end}}
         </div>
       </div>
@@ -11,7 +11,7 @@
       </div>
 
       <div class="occupation-date">
-        <div class="inner occupation-date-start">
+        <div class="inner occupation-date-inner occupation-date-start">
             {{start}}
         </div>
       </div>
@@ -19,8 +19,8 @@
   </div>
 
   <div class="wrapper eleven columns">
-    <h2 class="occupation-employer"><a href="{{employerUrl}}">{{employerName}}</a></h2>
-    <span class="occupation-title">{{jobTitle}}</span>
+    <h2 class="occupation-employer"><a href="{{employerUrl}}" target="_blank">{{employerName}}</a></h2>
+    <h3 class="occupation-title">{{jobTitle}}</h3>
     <ul class="occupation-description">
       {{#each description}}
         <li>{{this}}</li>
