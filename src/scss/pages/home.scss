@@ -19,7 +19,7 @@ main {
 
 .sidebar-row {
   & + & {
-    margin-bottom: ws(medium);
+    margin-bottom: ws(small);
   }
 }
 

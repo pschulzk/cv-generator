@@ -67,7 +67,6 @@
 
 .occupation-title {
   text-transform: uppercase;
-  // letter-spacing: 2px;
 }
 
 .occupation-description {
@@ -81,7 +80,7 @@
   }
   li:before {
     content: '■';
-    margin-right: 0.6rem;
+    margin-right: 0.3rem;
     color: color(bluedark);
   }
 }
@@ -100,7 +99,7 @@
   }
 
   .occupation-date-span {
-    padding-top: 0.3rem;
+    padding-top: 0.25rem;
   }
   
   .occupation-date {
@@ -116,7 +115,7 @@
   }
   
   .occupation-date-start {
-    padding-bottom: 2.1rem;
+    padding-bottom: 2.3rem;
   }
   
   .occupation-until {
