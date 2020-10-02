@@ -5,7 +5,7 @@
   :not(&) + & {
 
     .occupation-date-end {
-      padding-bottom: 0.6rem;
+      padding-bottom: 0.9rem;
     }
   }
   
@@ -54,11 +54,10 @@
 .occupation-until {
   flex: 1;
   overflow: auto;
-  opacity: 0.3;
   width: 1px;
   margin-left: 0.38rem;
   margin-bottom: 0.2rem;
-  background-color: color(blue);
+  background-color: color(blueline);
 }
 
 .occupation-title {
@@ -89,8 +88,7 @@
   }
 
   .occupation-date-span {
-    padding-top: 0.45rem;
-    // padding-bottom: 2rem;
+    padding-top: 0.3rem;
   }
   
   .occupation-date {
@@ -100,10 +98,10 @@
       font: font(tiny-print);
     }
   }
-  
-  // .occupation-date-end {
-    // padding-bottom: 2rem;
-  // }
+
+  .occupation-date-end {
+    padding-bottom: 1.8rem;
+  }
   
   .occupation-date-start {
     padding-bottom: 2.1rem;
@@ -111,7 +109,13 @@
   
   .occupation-until {
     margin-left: 0.25rem;
-    // margin-bottom: 0;
+  }
+
+  .occupation-description {
+    li + li {
+      margin-top: ws(x-small-print);
+    }
+
   }
   
 }

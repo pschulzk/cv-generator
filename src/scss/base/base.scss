@@ -40,15 +40,17 @@ h2,
 h3 {
   margin-top: ws(x-small);
   margin-bottom: ws(x-small);
+  // letter-spacing: 2px;
 }
 
 h1 {
-  font: font(medium);
-  letter-spacing: 1px;
+  font: font(x-medium);
+  letter-spacing: 2px;
 }
 
 h2 {
   font: font(small);
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -73,8 +75,7 @@ h4 {
   }
   
   h1 {
-    font: font(medium-print);
-    letter-spacing: 1px;
+    font: font(x-medium-print);
   }
   
   h2 {

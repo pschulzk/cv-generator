@@ -8,7 +8,8 @@ $colors: (
   greydark: #454545,
   black: #302D2F,
   blue: #125386,
-  bluedark: #052B44
+  bluedark: #052B44,
+  blueline: #9bbbd3
 );
 
 $whitespace: (
@@ -19,18 +20,18 @@ $whitespace: (
   large: 3rem,
   x-medium: 2.25rem,
   medium: 2rem,
-  smaller: 1.2rem,
+  smaller: 1.5rem,
   small: 1.2rem,
   x-small: 0.7rem,
   xx-small: 0.25rem,
 
-  large-print: 3rem / 2,
-  x-medium-print: 2.25rem / 2,
-  medium-print: 2rem / 2,
+  large-print: 3rem / 2.8,
+  x-medium-print: 2.25rem / 2.8,
+  medium-print: 2rem / 2.8,
   smaller-print: 1.7rem / 2,
-  small-print: 1.2rem / 2,
-  x-small-print: 0.7rem / 2,
-  xx-small-print: 0.25rem / 2
+  small-print: 1.2rem / 2.8,
+  x-small-print: 0.7rem / 2.8,
+  xx-small-print: 0.25rem / 2.8
 );
 
 $font-size: (
@@ -39,15 +40,18 @@ $font-size: (
   xx-large: '8rem/1.05',
   x-large: '5rem/1.0',
   large: '3rem/1.2',
-  x-medium: '2.2rem/1.2',
+  x-medium: '1.5rem',
   medium: '1.2rem',
-  small: '1rem',
+  small: '1.2rem',
   x-tiny: '0.85rem',
   tiny: '0.6rem',
+  tiniest: '0.7rem',
 
-  default-print: '8px',
+  default-print: '9.5px',
+  x-medium-print: '1rem',
   medium-print: '0.6rem',
-  small-print: '0.55rem',
-  x-tiny-print: '0.45rem',
-  tiny-print: '0.4rem'
+  small-print: '0.7rem',
+  x-tiny-print: '0.55rem',
+  tiny-print: '0.5rem',
+  tiniest-print: '0.5rem',
 );

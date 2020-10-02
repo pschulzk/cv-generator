@@ -31,6 +31,12 @@ main {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: ws(x-small);
+  border-collapse: collapse;
+  font: font(tiniest);
+
+  tr {
+    border-bottom: 1px solid color(black);
+  }
 
   &.lines {
     width: calc(100% - 2rem);
@@ -44,9 +50,8 @@ main {
   caption {
     margin-bottom: ws(xx-small);
     padding-bottom: ws(xx-small);
-    border-bottom: 1px solid color(grey);
+    border-bottom: 1px solid color(blueline);
     text-align: left;
-    // font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
   }
@@ -106,7 +111,7 @@ main {
   // padding-top: 0;
 
   table {
-    margin-bottom: ws(medium);
+    margin-bottom: ws(x-small);
   }
 }
 
@@ -146,6 +151,15 @@ main {
 @media print {
   #portrait {
     width: 100%;
+  }
+
+  .table-standard {
+    font: font(tiniest-print);
+
+    tr > td {
+      line-height: ws(smaller-print);
+
+    }
   }
 
   .pre-title {
