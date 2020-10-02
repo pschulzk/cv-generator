@@ -30,6 +30,7 @@
 
 .occupation-date {
   padding-bottom: 0.5rem;
+  text-transform: uppercase;
   
   .occupation-date-inner {
     display: inline-block;
@@ -60,9 +61,13 @@
   background-color: color(blueline);
 }
 
+.occupation-data {
+  padding-left: 0.5rem;
+}
+
 .occupation-title {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
 }
 
 .occupation-description {
@@ -85,6 +90,13 @@
 
   .occupation {
     padding-top: ws(x-small-print);
+
+    :not(&) + & {
+
+      .occupation-date-end {
+        padding-bottom: 1.2rem;
+      }
+    }
   }
 
   .occupation-date-span {

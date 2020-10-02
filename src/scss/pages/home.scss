@@ -1,3 +1,6 @@
+@mixin shadow {
+  box-shadow: 0 0 11px #000;
+}
 
 main {
   height: 100%;
@@ -11,6 +14,7 @@ main {
   padding-bottom: ws(large);
   background-color: color(bluedark);
   color: color(pearl);
+  // @include shadow();
 }
 
 .sidebar-row {
@@ -23,7 +27,8 @@ main {
   width: 100%;
   height: auto;
   margin-left: 1rem;
-  margin-bottom: ws(medium);
+  margin-bottom: ws(tiny);
+  @include shadow();
 }
 
 .table-standard {
@@ -42,6 +47,10 @@ main {
     width: calc(100% - 2rem);
     margin-left: 0;
 
+    caption {
+      color: color(bluedark);
+    }
+
     tr {
       border-bottom: 1px solid color(light);
     }
@@ -53,7 +62,7 @@ main {
     border-bottom: 1px solid color(blueline);
     text-align: left;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 1px;
   }
 
   tr > td {
@@ -127,7 +136,7 @@ main {
 }
 
 .sub-title {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 0.1rem;
   font: font(x-tiny);
 }
