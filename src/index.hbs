@@ -1,9 +1,9 @@
 {{> header}}
 
 <div class="inner">
-  <div class="row">
+  {{!-- <div class="row"> --}}
 
-    <div class="wrapper sidebar">
+    <div class="wrapper three columns sidebar">
       <div class="row sidebar-row">
         <img id="portrait" src="./img/portrait.jpg" alt="portrait">
       </div>
@@ -90,7 +90,8 @@
 
     {{!-- MAIN --}}
 
-    <div class="wrapper content">
+    <div class="wrapper nine columns content">
+
       <div class="row cv-header">
         <div class="wrapper twelve columns">
           <span class="pre-title">Curriculum Vit&aelig;</span>
@@ -99,129 +100,145 @@
         </div>
       </div>
 
-      {{#each jobs}}
-        {{> occupation}}
-      {{else}}
-        <pre style="color: red;">No array found!</pre>
-      {{/each}}
+      <div class="row content-inner">
+        {{!-- EXPERIENCE --}}
 
-      <div class="row">
-        <div class="wrapper twelve columns">
-          <h2>Skills</h2>
-        </div>
-      </div>
+        <div class="wrapper nine columns content-experience">
+          <div class="row">
+            <div class="wrapper twelve columns">
+              <h2>Experience</h2>
+            </div>
+          </div>
 
-      <div class="row section-container">
-
-        <div class="wrapper four columns">
-          <table class="table-standard lines">
-            <caption>Languages</caption>
-            <tr>
-              <td valign="top">HTML, CSS, SASS:</td>
-              <td>7 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Bash:</td>
-              <td>7 years</td>
-            </tr>
-            <tr>
-              <td valign="top">TypeScript:</td>
-              <td>4 years</td>
-            </tr>
-            <tr>
-              <td valign="top">JavaScript:</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td valign="top">PHP:</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Java:</td>
-              <td>&lt;1 year</td>
-            </tr>
-            <tr>
-              <td valign="top">Python:</td>
-              <td>&lt;1 year</td>
-            </tr>
-          </table>
+          {{#each jobs}}
+            {{> occupation}}
+          {{else}}
+            <pre style="color: red;">No array found!</pre>
+          {{/each}}
         </div>
 
-        <div class="wrapper four columns">
-          <table class="table-standard lines">
-            <caption>Libraries/Frameworks</caption>
-            <tr>
-              <td valign="top">Angular 2+:</td>
-              <td>4 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Jasmine:</td>
-              <td>4 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Protractor:</td>
-              <td>4 years</td>
-            </tr>
-            <tr>
-              <td valign="top">jQuery:</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Nrwl/NX:</td>
-              <td>1 year</td>
-            </tr>
-            <tr>
-              <td valign="top">Redux:</td>
-              <td>1 year</td>
-            </tr>
-            <tr>
-              <td valign="top">ngXS:</td>
-              <td>1 year</td>
-            </tr>
-            <tr>
-              <td valign="top">GraphQL:</td>
-              <td>1 year</td>
-            </tr>
-          </table>
-        </div>
+        {{!-- SKILLS --}}
 
-        <div class="wrapper four columns">
-          <table class="table-standard lines">
-            <caption>Tools</caption>
-            <tr>
-              <td valign="top">Jenkins:</td>
-              <td>4 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Git:</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Gulp:</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Docker:</td>
-              <td>2 years</td>
-            </tr>
-            <tr>
-              <td valign="top">Webpack:</td>
-              <td>2 years</td>
-            </tr>
-            <tr>
-              <td valign="top">NPM (private repository):</td>
-              <td>1 year</td>
-            </tr>
-            <tr>
-              <td valign="top">SVN:</td>
-              <td>1 year</td>
-            </tr>
-          </table>
+        <div class="wrapper three columns content-skills">
+          <div class="row">
+            <div class="wrapper twelve columns">
+              <h2>Skills</h2>
+            </div>
+          </div>
+
+          <div class="row section-container">
+
+            <div class="wrapper twelve columns">
+              <table class="table-standard lines">
+                <caption>Languages</caption>
+                <tr>
+                  <td valign="top">HTML, CSS, SASS:</td>
+                  <td>7 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Bash:</td>
+                  <td>7 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">TypeScript:</td>
+                  <td>4 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">JavaScript:</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">PHP:</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Java:</td>
+                  <td>&lt;1 year</td>
+                </tr>
+                <tr>
+                  <td valign="top">Python:</td>
+                  <td>&lt;1 year</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="wrapper twelve columns">
+              <table class="table-standard lines">
+                <caption>Libraries/Frameworks</caption>
+                <tr>
+                  <td valign="top">Angular 2+:</td>
+                  <td>4 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Jasmine:</td>
+                  <td>4 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Protractor:</td>
+                  <td>4 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">jQuery:</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Nrwl/NX:</td>
+                  <td>1 year</td>
+                </tr>
+                <tr>
+                  <td valign="top">Redux:</td>
+                  <td>1 year</td>
+                </tr>
+                <tr>
+                  <td valign="top">ngXS:</td>
+                  <td>1 year</td>
+                </tr>
+                <tr>
+                  <td valign="top">GraphQL:</td>
+                  <td>1 year</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="wrapper twelve columns">
+              <table class="table-standard lines">
+                <caption>Tools</caption>
+                <tr>
+                  <td valign="top">Jenkins:</td>
+                  <td>4 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Git:</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Gulp:</td>
+                  <td>3 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Docker:</td>
+                  <td>2 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">Webpack:</td>
+                  <td>2 years</td>
+                </tr>
+                <tr>
+                  <td valign="top">NPM (private repository):</td>
+                  <td>1 year</td>
+                </tr>
+                <tr>
+                  <td valign="top">SVN:</td>
+                  <td>1 year</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
-  </div>
+  {{!-- </div> --}}
 
 </div>
 
