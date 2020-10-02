@@ -157,6 +157,10 @@ main {
     position: relative;
 }
 
+.content-education {
+  padding-top: ws(medium);
+}
+
 @media print {
   #portrait {
     width: 100%;
@@ -177,5 +181,9 @@ main {
   
   .sub-title {
     font: font(x-tiny-print);
+  }
+
+  .content-education {
+    padding-top: ws(large-print);
   }
 }

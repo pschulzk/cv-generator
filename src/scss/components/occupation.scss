@@ -72,8 +72,8 @@
 .occupation-description {
   list-style: none;
   margin-top: ws(x-small);
-  padding-left: 1rem;
-  text-indent: -1rem;
+  padding-left: 0.7rem;
+  text-indent: -0.7rem;
   
   li + li {
     margin-top: ws(x-small);
@@ -91,6 +91,9 @@
     padding-top: ws(x-small-print);
 
     :not(&) + & {
+      .occupation-date-span {
+        padding-top: 0.3rem;
+      }
 
       .occupation-date-end {
         padding-bottom: 1.2rem;
@@ -99,7 +102,7 @@
   }
 
   .occupation-date-span {
-    padding-top: 0.25rem;
+    padding-top: 0.3rem;
   }
   
   .occupation-date {
