@@ -39,9 +39,9 @@ main {
   border-collapse: collapse;
   font: font(tiniest);
 
-  tr {
-    border-bottom: 1px solid color(black);
-  }
+//   tr {
+//     border-bottom: 1px solid color(black);
+//   }
 
   &.lines {
     width: calc(100% - 2rem);
@@ -51,9 +51,9 @@ main {
       color: color(bluedark);
     }
 
-    tr {
-      border-bottom: 1px solid color(light);
-    }
+    // tr {
+    //   border-bottom: 1px solid color(light);
+    // }
   }
 
   caption {
