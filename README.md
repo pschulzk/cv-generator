@@ -28,6 +28,9 @@ npm i
 
 Run the default Gulp task to get started:
 
+NOTE:
+Node version 8.15 is required for this gulp version!
+
 ```sh
 gulp
 ```
