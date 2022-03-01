@@ -73,6 +73,7 @@
   list-style: none;
   margin-top: ws(x-small);
   padding-left: 0.7rem;
+  padding-right: 0.7rem;
   text-indent: -0.7rem;
   
   li + li {
@@ -129,7 +130,6 @@
     li + li {
       margin-top: ws(x-small-print);
     }
-
   }
   
 }
