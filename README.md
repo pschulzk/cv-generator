@@ -1,38 +1,42 @@
 # Curriculum Vitae of Philip Schulz-Klingauf
 
-Features:
+## Features:
 * Sass/SCSS
 * Handlebars templating
 * ES6 minification & bundling
 * Live injection/reload with BrowserSync 
 
-### Getting Started
+## Prerequisites
+* `nvm` (NodeJS version manager)
+* `pyenv` (python version manager)
+* `npx` (NPM package runner)
 
-Clone the repo using `git clone` or by clicking the *Download ZIP* button to the right.
+## Getting Started
+
+Clone the repo:
 
 ```sh
 git clone https://github.com/pschulzk/pschulzk-cv.git
 ```
-
-Navigate to the directory to where it was cloned.
-
+Navigate into cloned project folder:
 ```sh
-cd pschulzk
+cd pschulzk-cv
 ```
-
+Set correct python version required for npm dependencies:
+```sh
+pyenv local
+```
+Set correct NodeJS version required for npm dependencies:
+```sh
+nvm use
+```
 Install all dependencies using npm:
-
 ```sh
-npm i
+npm ci
 ```
-
 Run the default Gulp task to get started:
-
-NOTE:
-Node version 8.15 is required for this gulp version!
-
 ```sh
-gulp
+npx gulp
 ```
 
 BrowserSync will automagically inject any changes you make to the stylesheets. You can view the website at one of the given access URLs:
@@ -51,7 +55,7 @@ If you are working within a GitHub repo you can deploy your project, at any time
 gulp deploy
 ```
 
-### Credits
+## Credits
 
 - Responsive grid from [Skeleton](http://getskeleton.com) by [Dave Gamache](https://github.com/dhg)
 
