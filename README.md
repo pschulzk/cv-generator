@@ -1,10 +1,10 @@
-# Curriculum Vitae of Philip Schulz-Klingauf
+# CV Generator
 
 ## Features:
 * Sass/SCSS
 * Handlebars templating
 * ES6 minification & bundling
-* Live injection/reload with BrowserSync 
+* Live injection/reload with BrowserSync for development
 
 ## Prerequisites
 * `nvm` (NodeJS version manager)
