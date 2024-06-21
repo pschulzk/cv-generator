@@ -28,7 +28,7 @@ main {
   height: auto;
   margin-left: 1rem;
   margin-bottom: ws(tiny);
-//   @include shadow();
+  //   @include shadow();
 }
 
 .table-standard {
@@ -39,9 +39,9 @@ main {
   border-collapse: collapse;
   font: font(tiniest);
 
-//   tr {
-//     border-bottom: 1px solid color(black);
-//   }
+  //   tr {
+  //     border-bottom: 1px solid color(black);
+  //   }
 
   &.lines {
     width: calc(100% - 2rem);
@@ -109,7 +109,6 @@ main {
   background-color: color(pearl);
   color: color(black);
 
-
   .view-gh {
     display: inline-block;
     transition: color 0.1s;
@@ -129,7 +128,8 @@ main {
   margin-bottom: ws(medium);
 }
 
-.pre-title {
+.pre-title,
+#currentDate {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font: font(tiny);
@@ -150,11 +150,11 @@ main {
 }
 
 .content-experience {
-    position: relative;
+  position: relative;
 }
 
 .content-skills {
-    position: relative;
+  position: relative;
 }
 
 .content-education {
@@ -171,14 +171,14 @@ main {
 
     tr > td {
       line-height: ws(smaller-print);
-
     }
   }
 
-  .pre-title {
+  .pre-title,
+  #currentDate {
     font: font(tiny-print);
   }
-  
+
   .sub-title {
     font: font(x-tiny-print);
   }

@@ -6,7 +6,7 @@
 
     <script src="js/bundle.js"></script>
     <script>
-        document.querySelector('#currentDate').textContent = `${new Date().toLocaleDateString('en-US', { weekday: 'long' }) }, ${String(new Date().getDate()).padStart(2, '0')}.${String(new Date().getMonth() + 1).padStart(2, '0')}.${new Date().getFullYear()}`;
+        document.querySelector('#currentDate').textContent = `${String(new Date().getDate()).padStart(2, '0')}.${String(new Date().getMonth() + 1).padStart(2, '0')}.${new Date().getFullYear()}`;
         document.querySelector('#yoe-angular').textContent = `${new Date().getFullYear() - 2017} years`;
         document.querySelector('#yoe-html').textContent = `${new Date().getFullYear() - 2013} years`;
         document.querySelector('#yoe-typescript').textContent = `${new Date().getFullYear() - 2017} years`;
