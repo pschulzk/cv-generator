@@ -1,19 +1,17 @@
 {
   "jobs": [
     {
-      "jobTitle": "Freelance Fullstack Developer",
+      "jobTitle": "Freelance Senior Solution Architect and Business Analyst",
       "employerName": "Client: Federal Ministry of the Interior of Austria (Bundesministerium für Inneres)",
       "employerUrl": "https://www.bmi.gv.at/",
       "start": "09 / 2023",
       "end": "today",
       "description": [
-        "Developed software using Angular and Java.",
-        "Modernized tech stack and designed REST APIs.",
-        "Implemented monorepository architecture with Nrwl/NX.",
-        "Architected and developed component libraries.",
-        "Performed interim business analyst tasks, including requirements gathering and process mapping.",
-        "Defined specifications based on user stories.",
-        "Provided web development and UI/UX consulting."
+        "Serving dual role as technical lead and business analyst for sensitive government applications",
+        "Designing and implementing scalable REST APIs",
+        "Conducting stakeholder interviews and workshops to gather requirements.",
+        "Authoring technical specifications and user stories",
+        "Providing consulting on frontend development best practices and UI/UX optimization"
       ]
     },
     {
